@@ -1,13 +1,12 @@
-function App() {
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
+import Button from "@mui/material/Button";
+
+function App(): ReactJSXElement {
   return (
-    <div className="App">
-      <label htmlFor="firstname">User name: </label>
-      <input
-        type="text"
-        id="firstname"
-        name="firstname"
-        placeholder="first name..."
-      />
+    <div>
+      <Button variant="contained" color="warning">
+        Hello World!
+      </Button>
     </div>
   );
 }
